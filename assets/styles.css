@@ -279,4 +279,14 @@ button:focus-visible {
   .project-main {
     padding: 32px 24px;
   }
+  
+  .project-detail-image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(720px, calc(100vw - 44px));
+  max-height: calc(100vh - 140px);
+  object-fit: contain;
+  margin: 0 auto;
+  }
 }
