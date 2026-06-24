@@ -107,9 +107,7 @@ button:focus-visible {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
   background: #183f2e;
-  object-fit: cover;
 }
 
 .project-image-link:hover img {
