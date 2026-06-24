@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Architectural model placeholder">
+  <rect width="960" height="540" fill="#183f2e"/>
+  <path d="M72 0h232l256 540H342z" fill="#d4ddd6" opacity=".33"/>
+  <g fill="none" stroke="#95aa9c" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" opacity=".7">
+    <path d="M356 176 553 96l199 82-198 91z"/>
+    <path d="M356 176v188l197 91 199-92V178"/>
+    <path d="M553 96v359"/>
+    <path d="M356 267l197 86 199-84"/>
+    <path d="M406 220v88l79 35v-89z"/>
+    <path d="M623 223v92l72-33v-91z"/>
+    <path d="M435 141v-47l226 91v47"/>
+    <path d="M435 94 624 23l226 91-189 71"/>
+    <path d="M624 23v46"/>
+    <path d="M485 72v45"/>
+    <path d="M535 52v45"/>
+    <path d="M586 33v45"/>
+    <path d="M676 44v45"/>
+    <path d="M728 65v45"/>
+    <path d="M780 86v45"/>
+    <path d="M424 389v-73l72 31v73"/>
+    <path d="M603 385v-77l89-38v77"/>
+  </g>
+  <g fill="none" stroke="#c7d3cb" stroke-width="2" opacity=".28">
+    <path d="M356 176 752 178"/>
+    <path d="M356 364 752 363"/>
+    <path d="M406 220 623 223"/>
+    <path d="M485 343 695 282"/>
+  </g>
+</svg>
