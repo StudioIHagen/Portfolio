@@ -289,4 +289,17 @@ button:focus-visible {
   object-fit: contain;
   margin: 0 auto;
   }
+  .project-media-list {
+  width: 100%;
+  overflow-x: hidden;
 }
+
+.project-media-list .project-detail-image {
+  display: block;
+  width: min(720px, calc(100vw - 44px));
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
