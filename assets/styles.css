@@ -207,58 +207,54 @@ button:focus-visible {
   cursor: zoom-in;
 }
 
-.about-main {
-  padding: clamp(84px, 12vw, 126px) var(--page-pad) 78px;
+.info-main {
+  padding: clamp(120px, 13vw, 170px) var(--page-pad) 64px;
 }
 
-.about-hero {
-  display: grid;
-  grid-template-columns: minmax(220px, 320px) minmax(280px, 430px);
-  gap: clamp(54px, 10vw, 122px);
-  align-items: start;
-  justify-content: center;
-  width: min(1040px, calc(100vw - 44px));
-  margin: 0 auto clamp(46px, 6.8vw, 72px);
-}
-
-.about-copy {
-  text-align: left;
-}
-
-.about-copy h1 {
-  margin: 0 0 22px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.1;
-  text-transform: uppercase;
-}
-
-.about-copy p,
-.about-text p {
-  margin: 0;
-  font-size: clamp(13px, 1.45vw, 15px);
-  line-height: 1.18;
-}
-
-.about-portrait {
-  display: block;
-  width: min(430px, 100%);
-  height: auto;
-  background: #ffffff;
-  object-fit: contain;
-}
-}
-
-.about-text {
+.info-list {
   display: flex;
-  width: min(860px, calc(100vw - 44px));
+  width: min(980px, calc(100vw - 44px));
   flex-direction: column;
-  gap: clamp(31px, 5vw, 46px);
+  gap: clamp(58px, 7vw, 82px);
   margin: 0 auto;
 }
 
-.about-actions {
-  margin-top: clamp(72px, 10vw, 96px);
+.info-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: clamp(40px, 6vw, 86px);
+  align-items: start;
+}
+
+.info-row h1,
+.info-row h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.info-row p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.info-portrait {
+  display: block;
+  width: min(420px, calc(100vw - 44px));
+  height: auto;
+  margin: clamp(110px, 12vw, 150px) auto 0;
+  background: #ffffff;
+}
+
+.info-footer {
+  margin-top: clamp(90px, 10vw, 130px);
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .image-lightbox {
@@ -322,18 +318,23 @@ button:focus-visible {
     max-width: min(88vw, 620px);
   }
 
-  .about-main {
-    padding-top: 76px;
+  .info-main {
+    padding-top: 86px;
   }
 
-  .about-hero {
-    width: min(88vw, 430px);
+  .info-list {
+    width: min(88vw, 980px);
+    gap: 44px;
+  }
+
+  .info-row {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 12px;
   }
 
-  .about-text {
-    width: min(88vw, 860px);
+  .info-portrait {
+    width: min(78vw, 420px);
+    margin-top: 76px;
   }
 
   .image-lightbox {
@@ -351,18 +352,6 @@ button:focus-visible {
   }
 }
 
-.about-text-block h2 {
-  margin: 0 0 14px;
-  font-size: clamp(14px, 1.55vw, 16px);
-  font-weight: 400;
-  line-height: 1.1;
-  text-transform: uppercase;
-}
-
-.about-text-block p {
-  margin: 0;
-}
-
 @media print {
   .site-header,
   .home-actions,
@@ -372,9 +361,8 @@ button:focus-visible {
   }
 
   .home-main,
-  .about-main,
+  .info-main,
   .project-main {
     padding: 32px 24px;
   }
 }
-
