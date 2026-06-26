@@ -23,6 +23,20 @@ body {
   background: #ffffff;
 }
 
+body.about-page {
+  background: #223f30;
+  color: #ffffff;
+}
+
+body.about-page .site-header {
+  background: #223f30;
+}
+
+body.about-page a,
+body.about-page button {
+  color: #ffffff;
+}
+
 a,
 button {
   color: inherit;
@@ -208,7 +222,7 @@ button:focus-visible {
 }
 
 .about-copy {
-  text-align: center;
+  text-align: left;
 }
 
 .about-copy h1 {
