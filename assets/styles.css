@@ -170,15 +170,27 @@ button:focus-visible {
 
 .project-media-list {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   gap: clamp(54px, 8vw, 78px);
+  overflow-x: hidden;
 }
 
 .project-placeholder {
   width: min(620px, calc(100vw - 44px));
   aspect-ratio: 1.22 / 1;
   background: #000000;
+}
+
+.project-detail-image {
+  display: block;
+  width: min(720px, calc(100vw - 44px));
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  cursor: zoom-in;
 }
 
 .about-main {
@@ -232,6 +244,43 @@ button:focus-visible {
   margin-top: clamp(72px, 10vw, 96px);
 }
 
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.image-lightbox.is-open {
+  display: flex;
+}
+
+.image-lightbox img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 48px);
+  object-fit: contain;
+}
+
+.image-lightbox-close {
+  position: fixed;
+  top: 22px;
+  right: 26px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #111111;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 1;
+}
+
 @media (max-width: 700px) {
   .site-header {
     min-height: 60px;
@@ -246,6 +295,10 @@ button:focus-visible {
   .project-card,
   .project-placeholder {
     width: min(88vw, 640px);
+  }
+
+  .project-detail-image {
+    width: min(88vw, 720px);
   }
 
   .project-intro {
@@ -265,12 +318,27 @@ button:focus-visible {
   .about-text {
     width: min(88vw, 860px);
   }
+
+  .image-lightbox {
+    padding: 16px;
+  }
+
+  .image-lightbox img {
+    max-width: calc(100vw - 32px);
+    max-height: calc(100vh - 32px);
+  }
+
+  .image-lightbox-close {
+    top: 14px;
+    right: 18px;
+  }
 }
 
 @media print {
   .site-header,
   .home-actions,
-  .about-actions {
+  .about-actions,
+  .image-lightbox {
     display: none;
   }
 
@@ -280,18 +348,3 @@ button:focus-visible {
     padding: 32px 24px;
   }
 }
-
-.project-media-list {
-  width: 100%;
-  overflow-x: hidden;
-}
-
-.project-media-list .project-detail-image {
-  display: block;
-  width: min(720px, calc(100vw - 44px));
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-  object-fit: contain;
-}
-
