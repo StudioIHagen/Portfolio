@@ -6,14 +6,6 @@ printButtons.forEach((button) => {
   });
 });
 
-const printButtons = document.querySelectorAll("[data-print]");
-
-printButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    window.print();
-  });
-});
-
 const lightbox = document.querySelector("#imageLightbox");
 const lightboxImage = lightbox?.querySelector("img");
 const lightboxClose = lightbox?.querySelector(".image-lightbox-close");
