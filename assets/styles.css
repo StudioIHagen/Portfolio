@@ -350,6 +350,25 @@ button:focus-visible {
     top: 14px;
     right: 18px;
   }
+  .project-media-item {
+  display: flex;
+  width: min(720px, calc(100vw - 44px));
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.project-media-item .project-detail-image {
+  width: 100%;
+}
+
+.project-image-text {
+  width: 100%;
+  margin: 0;
+  font-size: clamp(13px, 1.45vw, 15px);
+  line-height: 1.25;
+  text-align: left;
+}
 }
 
 @media print {
