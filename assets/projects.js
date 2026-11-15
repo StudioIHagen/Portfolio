@@ -3,10 +3,11 @@ const portfolioProjects = [
   {
     title: "Two Bodies",
     href: "projects/ACDL-1.html",
-    image: "assets/ACDL-1-cover.png",
+    image: "assets/project-5.svg",
     alt: "ACDL-1",
     ariaLabel: "Open ACDL-1",
-    visible: false
+    visible: false,
+    allProjectsVisible: true
   },
   {
     title: "Rovenveien 466",
@@ -14,7 +15,8 @@ const portfolioProjects = [
     image: "assets/RVV466-cover.png",
     alt: "Project 1",
     ariaLabel: "Open Project 1",
-    visible: true
+    visible: true,
+    allProjectsVisible: true
   },
   {
     title: "John Blond House, Farm Cultural Park",
@@ -22,7 +24,8 @@ const portfolioProjects = [
     image: "assets/JohnBlond-cover.jpg",
     alt: "Project 4",
     ariaLabel: "Open Project 4",
-    visible: true
+    visible: true,
+    allProjectsVisible: true
   },
   {
     title: "Maridalsveien 31C",
@@ -30,7 +33,8 @@ const portfolioProjects = [
     image: "assets/Maridalsveien31-cover.jpg",
     alt: "Architectural study model for Project 2",
     ariaLabel: "Open Project 2",
-    visible: true
+    visible: true,
+    allProjectsVisible: true
   },
   {
     title: "Isielva | Næringsmark",
@@ -38,6 +42,7 @@ const portfolioProjects = [
     image: "assets/Isielva-cover.jpg",
     alt: "Architectural study model for Project 3",
     ariaLabel: "Open Project 3",
-    visible: true
+    visible: true,
+    allProjectsVisible: true
   }
 ];

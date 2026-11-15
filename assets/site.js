@@ -1,7 +1,7 @@
 const projectList = document.querySelector("[data-project-list]");
 
 if (projectList) {
-  portfolioProjects.filter((project) => project.visible !== false).forEach((project) => {
+  portfolioProjects.filter((project) => projectList.dataset.projectList === "all" ? (project.visible !== false || project.allProjectsVisible !== false) : project.visible !== false).forEach((project) => {
     const card = document.createElement("article");
     card.className = "project-card";
 
