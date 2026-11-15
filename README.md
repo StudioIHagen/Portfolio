@@ -32,3 +32,14 @@ page (including the PDF printout); its project page is still accessible by direc
 URL. This is a display setting, not access control.
 
 Commit the change and let GitHub Pages deploy it to update the website.
+
+## Project filenames
+
+| Project | Page | Images |
+| --- | --- | --- |
+| Rovenveien 466 | `projects/RVV466.html` | `assets/RVV466-1.png` etc. |
+| John Blond House | `projects/JohnBlond.html` | `assets/JohnBlond-1.jpg` etc. |
+| Maridalsveien 31C | `projects/Maridalsveien31.html` | `assets/Maridalsveien31-1.jpg` etc. |
+| Isielva | `projects/Isielva.html` | `assets/Isielva-1.jpg` etc. |
+
+Cover images use the same prefix with `-cover`.
