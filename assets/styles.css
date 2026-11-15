@@ -410,3 +410,20 @@ button:focus-visible {
 .resource-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: 2rem; }
 .resource-grid article { text-align: center; }
 .resource-grid img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; margin-bottom: .5625rem; }
+
+/* All Projects: slightly wider than the 40rem home page cards. */
+.all-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: min(48rem, 100%);
+  margin: 0 auto;
+  gap: 2.5rem 1.25rem;
+  align-items: start;
+}
+.all-projects-grid .project-card { width: 100%; min-width: 0; }
+@media (max-width: 700px) {
+  .all-projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 420px) {
+  .all-projects-grid { grid-template-columns: 1fr; }
+}

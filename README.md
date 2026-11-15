@@ -43,3 +43,9 @@ Commit the change and let GitHub Pages deploy it to update the website.
 | Isielva | `projects/Isielva.html` | `assets/Isielva-1.jpg` etc. |
 
 Cover images use the same prefix with `-cover`.
+
+## All Projects and Resources
+
+- `All-Projects.html`: All Projects, with a three-column desktop grid.
+- `Resources.html`: Resources catalog.
+- `assets/resources.js`: resource content.
