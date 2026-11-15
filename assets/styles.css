@@ -1,6 +1,6 @@
 :root {
   --text: #111111;
-  --page-pad: clamp(14px, 2.4vw, 28px);
+  --page-pad: clamp(0.875rem, 2.4vw, 1.75rem);
 }
 
 * {
@@ -11,7 +11,7 @@ html {
   background: #ffffff;
   color: var(--text);
   font-family: Bahnschrift, "Bahnschrift Regular", "Arial Narrow", Arial, sans-serif;
-  font-size: 16px;
+  font-size: clamp(16px, 0.833333vw, 32px);
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
@@ -51,13 +51,13 @@ a {
 a:hover,
 button:hover {
   text-decoration: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: 0.25rem;
 }
 
 a:focus-visible,
 button:focus-visible {
-  outline: 1px solid currentColor;
-  outline-offset: 5px;
+  outline: 0.0625rem solid currentColor;
+  outline-offset: 0.3125rem;
 }
 
 .site-header {
@@ -67,8 +67,8 @@ button:focus-visible {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  min-height: clamp(62px, 8.7vw, 86px);
-  padding: clamp(23px, 3vw, 31px) var(--page-pad);
+  min-height: clamp(3.875rem, 8.7vw, 5.375rem);
+  padding: clamp(1.4375rem, 3vw, 1.9375rem) var(--page-pad);
   background: #ffffff;
 }
 
@@ -79,20 +79,20 @@ button:focus-visible {
 .nav-link,
 .brand-link {
   display: inline-block;
-  font-size: clamp(15px, 1.7vw, 18px);
+  font-size: clamp(0.9375rem, 1.7vw, 1.125rem);
   line-height: 1;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
 .home-main {
-  padding: clamp(44px, 5.4vw, 72px) var(--page-pad) 78px;
+  padding: clamp(2.75rem, 5.4vw, 4.5rem) var(--page-pad) 4.875rem;
 }
 
 .home-intro {
-  max-width: min(560px, 88vw);
-  margin: 0 auto clamp(70px, 9.3vw, 95px);
-  font-size: clamp(13px, 1.45vw, 15px);
+  max-width: min(35rem, 88vw);
+  margin: 0 auto clamp(4.375rem, 9.3vw, 5.9375rem);
+  font-size: clamp(0.8125rem, 1.45vw, 0.9375rem);
   line-height: 1.2;
   text-align: center;
 }
@@ -101,12 +101,12 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: clamp(44px, 6.5vw, 64px);
+  gap: clamp(2.75rem, 6.5vw, 4rem);
 }
 
 .project-card {
   display: flex;
-  width: min(640px, calc(100vw - 44px));
+  width: min(40rem, calc(100vw - 2.75rem));
   flex-direction: column;
   align-items: center;
 }
@@ -129,8 +129,8 @@ button:focus-visible {
 }
 
 .project-name {
-  margin-top: 9px;
-  font-size: clamp(13px, 1.45vw, 15px);
+  margin-top: 0.5625rem;
+  font-size: clamp(0.8125rem, 1.45vw, 0.9375rem);
   line-height: 1.1;
   text-align: center;
 }
@@ -142,7 +142,7 @@ button:focus-visible {
 }
 
 .home-actions {
-  margin-top: clamp(60px, 8vw, 82px);
+  margin-top: clamp(3.75rem, 8vw, 5.125rem);
 }
 
 .pdf-button {
@@ -152,33 +152,33 @@ button:focus-visible {
   padding: 0;
   background: transparent;
   cursor: pointer;
-  font-size: clamp(14px, 1.55vw, 16px);
+  font-size: clamp(0.875rem, 1.55vw, 1rem);
   line-height: 1;
   text-transform: uppercase;
 }
 
 .project-main {
-  padding: clamp(44px, 5.6vw, 70px) var(--page-pad) 96px;
+  padding: clamp(2.75rem, 5.6vw, 4.375rem) var(--page-pad) 6rem;
 }
 
 .project-intro {
-  max-width: min(620px, 88vw);
-  margin: 0 auto clamp(58px, 8vw, 82px);
+  max-width: min(38.75rem, 88vw);
+  margin: 0 auto clamp(3.625rem, 8vw, 5.125rem);
   text-align: center;
 }
 
 .project-intro h1 {
-  margin: 0 0 15px;
-  font-size: clamp(22px, 2.5vw, 28px);
+  margin: 0 0 0.9375rem;
+  font-size: clamp(1.375rem, 2.5vw, 1.75rem);
   font-weight: 400;
   line-height: 1.1;
   text-transform: uppercase;
 }
 
 .project-intro p {
-  max-width: 590px;
+  max-width: 36.875rem;
   margin: 0 auto;
-  font-size: clamp(13px, 1.45vw, 15px);
+  font-size: clamp(0.8125rem, 1.45vw, 0.9375rem);
   line-height: 1.22;
 }
 
@@ -187,19 +187,19 @@ button:focus-visible {
   width: 100%;
   flex-direction: column;
   align-items: center;
-  gap: clamp(54px, 8vw, 78px);
+  gap: clamp(3.375rem, 8vw, 4.875rem);
   overflow-x: hidden;
 }
 
 .project-placeholder {
-  width: min(620px, calc(100vw - 44px));
+  width: min(38.75rem, calc(100vw - 2.75rem));
   aspect-ratio: 1.22 / 1;
   background: #000000;
 }
 
 .project-detail-image {
   display: block;
-  width: min(720px, calc(100vw - 44px));
+  width: min(45rem, calc(100vw - 2.75rem));
   max-width: 100%;
   height: auto;
   margin: 0 auto;
@@ -208,28 +208,28 @@ button:focus-visible {
 }
 
 .info-main {
-  padding: clamp(120px, 13vw, 170px) var(--page-pad) 64px;
+  padding: clamp(7.5rem, 13vw, 10.625rem) var(--page-pad) 4rem;
 }
 
 .info-list {
   display: flex;
-  width: min(980px, calc(100vw - 44px));
+  width: min(61.25rem, calc(100vw - 2.75rem));
   flex-direction: column;
-  gap: clamp(58px, 7vw, 82px);
+  gap: clamp(3.625rem, 7vw, 5.125rem);
   margin: 0 auto;
 }
 
 .info-row {
   display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: clamp(40px, 6vw, 86px);
+  grid-template-columns: 10rem 1fr;
+  gap: clamp(2.5rem, 6vw, 5.375rem);
   align-items: start;
 }
 
 .info-row h1,
 .info-row h2 {
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.15;
   text-transform: uppercase;
@@ -237,21 +237,21 @@ button:focus-visible {
 
 .info-row p {
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.2;
 }
 
 .info-portrait {
   display: block;
-  width: min(420px, calc(100vw - 44px));
+  width: min(26.25rem, calc(100vw - 2.75rem));
   height: auto;
-  margin: clamp(110px, 12vw, 150px) auto 0;
+  margin: clamp(6.875rem, 12vw, 9.375rem) auto 0;
   background: #ffffff;
 }
 
 .info-footer {
-  margin-top: clamp(90px, 10vw, 130px);
-  font-size: 14px;
+  margin-top: clamp(5.625rem, 10vw, 8.125rem);
+  font-size: 0.875rem;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
@@ -264,7 +264,7 @@ button:focus-visible {
   display: none;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 1.5rem;
   background: rgba(255, 255, 255, 0.96);
 }
 
@@ -276,86 +276,86 @@ button:focus-visible {
   display: block;
   width: auto;
   height: auto;
-  max-width: calc(100vw - 48px);
-  max-height: calc(100vh - 48px);
+  max-width: calc(100vw - 3rem);
+  max-height: calc(100vh - 3rem);
   object-fit: contain;
 }
 
 .image-lightbox-close {
   position: fixed;
-  top: 22px;
-  right: 26px;
+  top: 1.375rem;
+  right: 1.625rem;
   border: 0;
   padding: 0;
   background: transparent;
   color: #111111;
   cursor: pointer;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1;
 }
 
 @media (max-width: 700px) {
   .site-header {
-    min-height: 60px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    min-height: 3.75rem;
+    padding-top: 1.1875rem;
+    padding-bottom: 1.1875rem;
   }
 
   .home-main {
-    padding-top: 50px;
+    padding-top: 3.125rem;
   }
 
   .project-card,
   .project-placeholder {
-    width: min(88vw, 640px);
+    width: min(88vw, 40rem);
   }
 
   .project-detail-image {
-    width: min(88vw, 720px);
+    width: min(88vw, 45rem);
   }
 
   .project-intro {
-    max-width: min(88vw, 620px);
+    max-width: min(88vw, 38.75rem);
   }
 
   .info-main {
-    padding-top: 86px;
+    padding-top: 5.375rem;
   }
 
   .info-list {
-    width: min(88vw, 980px);
-    gap: 44px;
+    width: min(88vw, 61.25rem);
+    gap: 2.75rem;
   }
 
   .info-row {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 0.75rem;
   }
 
   .info-portrait {
-    width: min(78vw, 420px);
-    margin-top: 76px;
+    width: min(78vw, 26.25rem);
+    margin-top: 4.75rem;
   }
 
   .image-lightbox {
-    padding: 16px;
+    padding: 1rem;
   }
 
   .image-lightbox img {
-    max-width: calc(100vw - 32px);
-    max-height: calc(100vh - 32px);
+    max-width: calc(100vw - 2rem);
+    max-height: calc(100vh - 2rem);
   }
 
   .image-lightbox-close {
-    top: 14px;
-    right: 18px;
+    top: 0.875rem;
+    right: 1.125rem;
   }
   .project-media-item {
   display: flex;
-  width: min(720px, calc(100vw - 44px));
+  width: min(45rem, calc(100vw - 2.75rem));
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 0.875rem;
 }
 
 .project-media-item .project-detail-image {
@@ -365,7 +365,7 @@ button:focus-visible {
 .project-image-text {
   width: 100%;
   margin: 0;
-  font-size: clamp(13px, 1.45vw, 15px);
+  font-size: clamp(0.8125rem, 1.45vw, 0.9375rem);
   line-height: 1.25;
   text-align: left;
 }
@@ -382,13 +382,13 @@ button:focus-visible {
   .home-main,
   .info-main,
   .project-main {
-    padding: 32px 24px;
+    padding: 2rem 1.5rem;
   }
 }
 
 .social-links {
   align-items: center;
-  gap: clamp(24px, 4vw, 40px);
-  font-size: clamp(14px, 1.55vw, 16px);
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  font-size: clamp(0.875rem, 1.55vw, 1rem);
   line-height: 1.2;
 }
