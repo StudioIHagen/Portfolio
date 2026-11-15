@@ -431,6 +431,6 @@ button:focus-visible {
 
 .purchase-panel { margin: 4rem auto 0; text-align: center; max-width: 38.75rem; }
 .purchase-panel p { margin: 1rem 0; }
-.buy-button { display: inline-block; border: 1px solid currentColor; padding: .75rem 1.5rem; background: transparent; color: inherit; font: inherit; cursor: pointer; }
-.buy-button:disabled { opacity: .55; cursor: default; }
+.buy-button { display: inline-block; border: 1px solid #223f30; border-radius: .5rem; padding: .75rem 1.5rem; background: #223f30; color: #ffffff; font: inherit; cursor: pointer; }
+.buy-button:disabled { opacity: 1; cursor: default; }
 .purchase-note { font-size: .875rem; }
