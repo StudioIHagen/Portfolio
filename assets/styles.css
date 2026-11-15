@@ -385,3 +385,10 @@ button:focus-visible {
     padding: 32px 24px;
   }
 }
+
+.social-links {
+  align-items: center;
+  gap: clamp(24px, 4vw, 40px);
+  font-size: clamp(14px, 1.55vw, 16px);
+  line-height: 1.2;
+}
