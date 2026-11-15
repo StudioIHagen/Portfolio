@@ -7,7 +7,7 @@ const portfolioProjects = [
     alt: "ACDL-1",
     ariaLabel: "Open ACDL-1",
     visible: false,
-    allProjectsVisible: true
+    allProjectsVisible: false
   },
   {
     title: "Rovenveien 466",

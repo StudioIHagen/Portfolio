@@ -15,7 +15,19 @@ if (detail) {
   intro.append(h); detail.append(intro);
   if (r) {
     document.title = r.title + " - Studioihagen";
-    const p = document.createElement("p"); p.textContent = r.text || ""; intro.append(p);
+    (r.text || "").split(/\n\n+/).filter(Boolean).forEach(text => {
+      const p = document.createElement("p"); p.textContent = text; p.style.marginBottom = "1rem"; intro.append(p);
+    });
+    if (r.features?.length) {
+      const list = document.createElement("ul"); list.style.textAlign = "left";
+      r.features.forEach(text => { const li = document.createElement("li"); li.textContent = text; list.append(li); });
+      intro.append(list);
+    }
+    if (r.requirements) {
+      const p = document.createElement("p"); const label = document.createElement("strong");
+      label.textContent = "Requirements: "; p.append(label, r.requirements); p.style.marginBottom = "1rem"; intro.append(p);
+    }
+    if (r.credits) { const p = document.createElement("p"); p.textContent = r.credits; intro.append(p); }
     const media = document.createElement("section"); media.className = "project-media-list";
     (r.images || []).forEach(item => {
       const wrap = document.createElement("div"); wrap.className = "project-media-item";
