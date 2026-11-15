@@ -1,2 +1,11 @@
-// Add resources here: { id, title, cover, text, images: [{ src, alt, text }], download, visible: true }.
-const portfolioResources = [];
+const portfolioResources = [
+  {
+    id: "automatic-insulation-generator-rhino-8",
+    title: "Automatic Insulation Generator for Rhino 8",
+    cover: "assets/resource-placeholder.svg",
+    text: "",
+    images: [],
+    download: "",
+    visible: true
+  }
+];
