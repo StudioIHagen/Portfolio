@@ -6,6 +6,11 @@ const portfolioResources = [
     text: "",
     images: [],
     download: "",
+    payhip: {
+      enabled: false,
+      productId: "",
+      priceLabel: ""
+    },
     visible: true
   }
 ];

@@ -23,6 +23,22 @@ if (detail) {
       const text = document.createElement("p"); text.className = "project-image-text"; text.textContent = item.text || "";
       wrap.append(img, text); media.append(wrap);
     }); detail.append(media);
-    if (r.download) { const actions = document.createElement("div"); actions.className = "home-actions"; const a = link(r.download, "Download"); a.setAttribute("download", ""); actions.append(a); detail.append(actions); }
+    if (r.payhip) {
+      const actions = document.createElement("section");
+      actions.className = "purchase-panel";
+      actions.setAttribute("aria-label", "Purchase");
+      const price = document.createElement("p");
+      price.textContent = r.payhip.priceLabel || "Price to be announced";
+      const ready = r.payhip.enabled === true && /^[A-Za-z0-9]+$/.test(r.payhip.productId || "") && Boolean(r.payhip.priceLabel);
+      const buy = ready ? link("https://payhip.com/buy?link=" + encodeURIComponent(r.payhip.productId), "Buy") : document.createElement("button");
+      buy.className = "buy-button";
+      if (!ready) { buy.type = "button"; buy.disabled = true; buy.textContent = "Buy — Coming soon"; }
+      const note = document.createElement("p");
+      note.className = "purchase-note";
+      note.textContent = ready ? "Secure checkout and digital file delivery by Payhip." : "This resource is not available for purchase yet.";
+      actions.append(price, buy, note);
+      detail.append(actions);
+    }
+    if (!r.payhip && r.download) { const actions = document.createElement("div"); actions.className = "home-actions"; const a = link(r.download, "Download"); a.setAttribute("download", ""); actions.append(a); detail.append(actions); }
   }
 }
