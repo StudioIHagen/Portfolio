@@ -6,7 +6,7 @@ const portfolioProjects = [
     image: "assets/ACDL-1-cover.png",
     alt: "ACDL-1",
     ariaLabel: "Open ACDL-1",
-    visible: true
+    visible: false
   },
   {
     title: "Rovenveien 466",
