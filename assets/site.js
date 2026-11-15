@@ -1,3 +1,30 @@
+const projectList = document.querySelector("[data-project-list]");
+
+if (projectList) {
+  portfolioProjects.filter((project) => project.visible !== false).forEach((project) => {
+    const card = document.createElement("article");
+    card.className = "project-card";
+
+    const imageLink = document.createElement("a");
+    imageLink.className = "project-image-link";
+    imageLink.href = project.href;
+    imageLink.setAttribute("aria-label", project.ariaLabel);
+
+    const image = document.createElement("img");
+    image.src = project.image;
+    image.alt = project.alt;
+    imageLink.append(image);
+
+    const nameLink = document.createElement("a");
+    nameLink.className = "project-name";
+    nameLink.href = project.href;
+    nameLink.textContent = project.title;
+
+    card.append(imageLink, nameLink);
+    projectList.append(card);
+  });
+}
+
 const printButtons = document.querySelectorAll("[data-print]");
 
 printButtons.forEach((button) => {
