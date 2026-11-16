@@ -22,7 +22,7 @@ const portfolioResources = [
     "payhip": {
       "enabled": true,
       "productId": "OQ23U",
-      "priceLabel": "See price at checkout"
+      "priceLabel": "€5"
     },
     "visible": true
   }
