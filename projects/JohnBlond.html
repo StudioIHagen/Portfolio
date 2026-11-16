@@ -4,14 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Project 4 - Studioihagen</title>
-    <link rel="stylesheet" href="../assets/styles.css?v=grid-6">
+    <link rel="stylesheet" href="../assets/styles.css?v=mobile-menu-12">
   </head>
   <body class="project-page">
     <header class="site-header">
       <nav class="site-navigation" aria-label="Main navigation">
+        <button class="mobile-menu-toggle nav-link" type="button" aria-expanded="false" aria-controls="main-navigation-links">INFO</button>
+        <div class="navigation-links" id="main-navigation-links">
         <a class="nav-link" href="../All-Projects.html">All Projects</a>
         <a class="nav-link" href="../Resources.html">Resources</a>
         <a class="nav-link" href="../about.html">INFO</a>
+              </div>
       </nav>
       <a class="brand-link" href="../index.html" aria-label="Back to home">STUDIOIHAGEN</a>
     </header>
@@ -112,5 +115,6 @@
     </div>
 
     <script src="../assets/site.js" defer></script>
+    <script src="../assets/navigation.js?v=mobile-menu-12" defer></script>
   </body>
 </html>

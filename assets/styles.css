@@ -434,3 +434,15 @@ button:focus-visible {
 .buy-button { display: inline-block; border: 1px solid #223f30; border-radius: .5rem; padding: .75rem 1.5rem; background: #223f30; color: #ffffff; font: inherit; cursor: pointer; }
 .buy-button:disabled { opacity: 1; cursor: default; }
 .purchase-note { font-size: .875rem; }
+
+.navigation-links { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; align-items: center; }
+.mobile-menu-toggle { display: none; }
+@media (max-width: 700px) {
+  .site-header { flex-wrap: nowrap; align-items: flex-start; gap: .75rem; }
+  .site-navigation { position: relative; display: block; flex: 0 0 auto; }
+  .mobile-menu-toggle { display: block; appearance: none; border: 0; padding: 0; background: transparent; cursor: pointer; }
+  .navigation-links { display: none; position: absolute; top: calc(100% + 1rem); left: 0; flex-direction: column; align-items: flex-start; gap: 1rem; min-width: 11rem; padding: 1rem; background: #ffffff; box-shadow: 0 .25rem .75rem #0002; }
+  .site-navigation.is-open .navigation-links { display: flex; }
+  .about-page .navigation-links { background: #223f30; }
+  .brand-link { margin-left: auto; }
+}
