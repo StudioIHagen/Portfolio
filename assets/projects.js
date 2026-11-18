@@ -48,7 +48,7 @@ const portfolioProjects = [
   {
     title: "Grunn",
     href: "projects/Grunn.html",
-    image: "assets/Grunn-01.jpg",
+    image: "assets/Grunn-cover.jpg",
     alt: "Grunn architectural project",
     ariaLabel: "Open Grunn",
     visible: false,
