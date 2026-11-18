@@ -53,5 +53,14 @@ const portfolioProjects = [
     ariaLabel: "Open Grunn",
     visible: false,
     allProjectsVisible: true
+  },
+  {
+    title: "Cohabitat",
+    href: "projects/Cohabitat.html",
+    image: "assets/Cohabitat-cover.jpg",
+    alt: "Cohabitat main entrance view",
+    ariaLabel: "Open Cohabitat",
+    visible: false,
+    allProjectsVisible: true
   }
 ];
