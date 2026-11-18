@@ -57,8 +57,8 @@ const portfolioProjects = [
   {
     title: "Cohabitat",
     href: "projects/Cohabitat.html",
-    image: "assets/Cohabitat-cover.jpg",
-    alt: "Cohabitat main entrance view",
+    image: "assets/Cohabitat-balcony.jpg",
+    alt: "Cohabitat balcony view",
     ariaLabel: "Open Cohabitat",
     visible: false,
     allProjectsVisible: true

@@ -445,3 +445,9 @@ button:focus-visible {
   .about-page .navigation-links { background: #223f30; }
   .brand-link { margin-left: auto; }
 }
+
+.project-image-link[href="projects/Cohabitat.html"] img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 60% 50%;
+}
