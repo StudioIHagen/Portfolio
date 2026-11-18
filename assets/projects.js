@@ -44,5 +44,14 @@ const portfolioProjects = [
     ariaLabel: "Open Project 3",
     visible: true,
     allProjectsVisible: true
+  },
+  {
+    title: "Grunn",
+    href: "projects/Grunn.html",
+    image: "assets/resource-placeholder.svg",
+    alt: "Grunn architectural project",
+    ariaLabel: "Open Grunn",
+    visible: false,
+    allProjectsVisible: true
   }
 ];
