@@ -35,7 +35,7 @@ if (detail) {
       const p = document.createElement("p"); const label = document.createElement("strong");
       label.textContent = "Requirements: "; p.append(label, r.requirements); p.style.marginBottom = "1rem"; description.append(p);
     }
-    if (r.credits) { const p = document.createElement("p"); p.textContent = r.credits; description.append(p); }
+    if (r.credits) r.credits.split(/\n\n+/).forEach(text => { const p = document.createElement("p"); p.textContent = text; p.style.marginBottom = "1rem"; description.append(p); });
     detail.append(description);
     if (r.payhip) {
       const actions = document.createElement("section");
